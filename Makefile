@@ -10,3 +10,6 @@ checkout: clean
 
 clean:
 	rm -rf build/
+
+docker:
+	docker build . --tag flutter_doxygen

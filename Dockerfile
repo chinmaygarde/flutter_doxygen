@@ -1,7 +1,7 @@
-FROM debian:bookworm-slim as build
+FROM alpine:latest as build
 
-RUN apt update
-RUN apt install -y doxygen graphviz make git
+RUN apk update
+RUN apk add doxygen graphviz make git
 COPY . /src
 WORKDIR /src
 RUN make
