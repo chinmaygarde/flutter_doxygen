@@ -505,6 +505,7 @@ NUM_PROC_THREADS       = 1
 # The default value is: NO.
 
 TIMESTAMP              = YES
+HTML_TIMESTAMP         = YES
 
 #---------------------------------------------------------------------------
 # Build related configuration options
