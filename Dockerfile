@@ -1,7 +1,7 @@
-FROM alpine:latest as build
+FROM gcc:14.1.0 as build
 
-RUN apk update
-RUN apk add doxygen graphviz make git
+RUN apt update -y
+RUN apt install -y doxygen graphviz make git
 COPY . /src
 WORKDIR /src
 RUN make
